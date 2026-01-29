@@ -24,6 +24,6 @@ test("Verify the element by text in it ",async ({page})=>{
 
 await page.goto("https://www.flipkart.com");
 const text:Locator=page.getByText("Cart")
-await expect(text)
+await expect(text).toBeVisible();
 await text.click();
 });
